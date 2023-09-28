@@ -133,7 +133,7 @@ export const TextForm = (props) => {
         </div>
         <div className="container my-2 py-2 px-20 hello heading" >
         <h4>Summary of the text you entered</h4>
-        <p>Words typed: {text.split(/\s+/).filter((element)=>{return element.length!=0}).length}   and  Letters typed: {text.length-text.split(/\s+/).length+1}</p>
+        <p>Words typed: {text.split(/\s+/).filter((element)=>{return element.length!=0}).length}   and  Letters typed: {text.split(/\S/g).length-1}</p>
         <p>Average time to be taken to read the text you entered is {0.008*text.split(" ").filter((element)=>{return element.length!=0}).length} mins</p>
         <h4>Preview of the text you entered</h4>
         <p className='my-0 '>{text.length>0?text:"**Please write something in the textbox first and then it will be previewed here**"}</p>
