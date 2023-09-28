@@ -19,7 +19,8 @@ function App() {
       setmode("dark");
       // we can also change the main body color
       document.body.style.backgroundColor='black';
-      document.title="TextUtils | Dark Mode";
+      document.getElementsByClassName('heading')[0].style.color='white';
+      document.getElementsByClassName('heading')[1].style.color='white';
       document.getElementsByClassName('hello')[0].style.border='1px solid white';
       document.getElementsByClassName('hello')[1].style.border='1px solid white';
       document.getElementsByClassName('hello')[2].style.border='1px solid white';
@@ -28,8 +29,9 @@ function App() {
     else{
       setmode("light");
       document.body.style.backgroundColor='white';
+      document.getElementsByClassName('heading')[0].style.color='black';
+      document.getElementsByClassName('heading')[1].style.color='black';
       document.getElementById('borderme').style.border='2px solid black';
-      document.title="TextUtils | Light Mode";
       showAlert(" Light mode has been enabled successfully !!","primary");
     }
   }

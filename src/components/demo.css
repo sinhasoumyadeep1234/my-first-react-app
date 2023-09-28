@@ -4,3 +4,79 @@
     align-items: center;
     justify-content: center;
 }
+
+.borderWhite{
+    border:2px solid white;
+}
+
+.bg-style{
+    margin:2px;
+}
+
+.blue-bg{
+    height: 40px;
+    width: 40px;
+    background-color: #0D6EFD;
+}
+.grey-bg{
+    height: 40px;
+    width: 40px;
+    background-color: #6C757D;
+}
+
+.green-bg{
+    height: 40px;
+    width: 40px;
+    background-color: #198754;
+}
+
+.red-bg{
+    height: 40px;
+    width: 40px;
+    background-color: #DC3545;
+}
+
+.bg-yellow{
+    height: 40px;
+    width: 40px;
+    background-color: #FFC107;
+}
+
+.purple-bg{
+    height: 40px;
+    width: 40px;
+    background-color: #800080;
+}
+
+.cyan-bg{
+    height: 40px;
+    width: 40px;
+    background-color: #00FFFF;
+}
+
+.pink-bg{
+    height: 40px;
+    width: 40px;
+    background-color: #FFC0CB;
+}
+
+.brown-bg{
+    height: 40px;
+    width: 40px;
+    background-color: #A52A2A;
+}
+
+.bg-style:focus{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 200px;
+    transition: all 0.1s ease-in;
+    padding: 3px;
+}
+
+@media screen and (max-width: 500px){
+    .nv{
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+    
+}
